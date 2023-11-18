@@ -1,5 +1,9 @@
 package com.akzvitor.dslist.repositories;
 
-public interface GameRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.akzvitor.dslist.entities.Game;
+
+public interface GameRepository extends JpaRepository<Game, Long> {
 
 }
