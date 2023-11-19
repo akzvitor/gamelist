@@ -16,7 +16,6 @@ public class Belonging {
 	private Integer position;
 	
 	public Belonging() {
-		
 	}
 
 	public Belonging(Game game, GameList list, Integer position) {
@@ -57,5 +56,4 @@ public class Belonging {
 		Belonging other = (Belonging) obj;
 		return Objects.equals(id, other.id);
 	}
-	
 }

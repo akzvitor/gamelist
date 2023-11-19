@@ -8,7 +8,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
 @Entity
 @Table(name = "tb_game_list")
 public class GameList {
@@ -19,7 +18,6 @@ public class GameList {
 	private String name;
 	
 	public GameList() {
-		
 	}
 
 	public GameList(Long id, String name) {
@@ -59,5 +57,4 @@ public class GameList {
 		GameList other = (GameList) obj;
 		return Objects.equals(id, other.id);
 	}
-	
 }

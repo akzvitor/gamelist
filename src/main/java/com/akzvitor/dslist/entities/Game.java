@@ -9,7 +9,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
 @Entity
 @Table(name = "tb_game")
 public class Game {
@@ -33,7 +32,6 @@ public class Game {
 	private String longDescription;
 	
 	public Game() {
-		
 	}
 
 	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
@@ -136,6 +134,5 @@ public class Game {
 			return false;
 		Game other = (Game) obj;
 		return Objects.equals(id, other.id);
-	}
-		
+	}	
 }
